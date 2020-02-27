@@ -53,14 +53,14 @@ public class BasePage {
         return isEnabled;
 
  }
-    public void selectElementByText(By locator) {
-        Select select = new Select(DriverWrapper.getDriver().findElement(locator));
-        List<WebElement> list = select.selectByValue();
-    }
-    public void selectElementByIndex(By locator) {
-        Select select = new Select(DriverWrapper.getDriver().findElement(locator));
-        List<WebElement> list = select.selectByIndex();
-    }
+//    public void selectElementByText(By locator) {
+//        Select select = new Select(DriverWrapper.getDriver().findElement(locator));
+//        List<WebElement> list = select.selectByValue();
+//    }
+//    public void selectElementByIndex(By locator) {
+//        Select select = new Select(DriverWrapper.getDriver().findElement(locator));
+//        List<WebElement> list = select.selectByIndex();
+//    }
 
     // Select selectText = new Select(DriverWrapper.getDriver().findElement(locator).
 
@@ -77,6 +77,7 @@ public class BasePage {
             }
         }
     }
+
 
    }
 

@@ -9,6 +9,7 @@ public class DriverWrapper {
 
     private static WebDriver driver;
     private static String url = "https://www.facebook.com/";
+    private static String amazonUrl = "https://www.amazon.com";
 
     @BeforeClass
     public void beforeClass() {
@@ -17,7 +18,7 @@ public class DriverWrapper {
         //init webdriver object
         driver = new ChromeDriver();
         //navigate to the url
-        driver.navigate().to(url);
+        driver.navigate().to(amazonUrl);
 
     }
 
@@ -32,6 +33,6 @@ public class DriverWrapper {
     }
 
     public static String getUrl() {
-        return url;
+        return amazonUrl;
     }
 }
