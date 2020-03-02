@@ -30,9 +30,9 @@ public class LandingPage extends BasePage {
     private By  priceCheck = By.xpath("//div[@class='sg-col-inner']//div/descendant::div[@class='a-row']");
     private By searchItem = By.id("twotabsearchtextbox");
     private By amazonSubmit = By.xpath("//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']");
-    String price = DriverWrapper.getDriver().findElement(By.xpath("//span[@class='celwidget slot=SEARCH_RESULTS " +
+    private String price = DriverWrapper.getDriver().findElement(By.xpath("//span[@class='celwidget slot=SEARCH_RESULTS " +
             "template=SEARCH_RESULTS widgetId=search-results index=0']//span[@class='a-price']")).getText();
-    String amazonDate = DriverWrapper.getDriver().findElement(By.xpath("//span[@class='celwidget slot=SEARCH_RESULTS " +
+    private String amazonDate = DriverWrapper.getDriver().findElement(By.xpath("//span[@class='celwidget slot=SEARCH_RESULTS " +
             "template=SEARCH_RESULTS widgetId=search-results index=0']//div[@class='rush-component']" +
             "//div[@class='rush-component']//div[@class='s-include-content-margin s-border-bottom']" +
             "//div[@class='a-section a-spacing-medium']//div[@class='sg-row']" +

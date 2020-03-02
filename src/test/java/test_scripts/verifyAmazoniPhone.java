@@ -21,6 +21,7 @@ public class verifyAmazoniPhone extends DriverWrapper {
         Thread.sleep(2000);
         landingPage.getElementPrice(50.00,150.00);
 
+
         landingPage.getDates();
 
 
